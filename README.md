@@ -16,7 +16,21 @@ DATABASE WIDE SNP SEARCH.
 Blank_Test.py - Finds rsid(SNP), chromosome, allele 1, allele 2 in database tables and prints them out.
 
 GENERAL TRAIT TEST
-DB_Trait_Test.py - A database wide search for preset SNPs that correlate with popular traits like cognitive, and physical ability. It gives the trait associated with the SNP, how it's associated, credibility score, and a link for further research.
+DB_Trait_Test.py - A database wide search for preset SNPs that correlate with popular traits like cognitive, and physical ability. It gives the trait associated with the SNP, how it's associated, credibility score, and a link for further research. 
+
+Output looks like.
+[('rs762551', 15, 75041917, 'A', 'A')]
+CYP1A2 -163C>A
+Caffeine metabolism gene variant. The A allele leads to faster caffeine metabolism, classifying individuals as 'fast metabolizers.'
+High – demonstrated in pharmacogenetic studies and linked to differential effects of coffee on heart health.
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4738107/
+[('rs1801133', 1, 11856378, 'A', 'G')]
+MTHFR C677T
+A folate metabolism variant. The T allele encodes a less active MTHFR enzyme, resulting in elevated homocysteine levels and increased risk of folate-deficiency complications.
+High – very well studied, with known impacts on cardiovascular and pregnancy-related outcomes.
+https://www.ahajournals.org/doi/full/10.1161/01.CIR.0000066324.46336.2A
+
+NOTICE - Getting a response for an SNP does not mean that the row ([('rs1801133', 1, 11856378, 'A', 'G')]) correlates. In this example the T allele indicates a less active MTHFR enzyme. This person has A/G, no T. More inferences can be gained by going to the url, pasting your SNP into GWAS, or for fast and possibly inaccurate inferences you can paste the full row or a list of rows into an AI chatbot.
 
 EUROPEAN ANCESTRY TEST 
 DB_Euro_Focused_Ancestry_Test.py - I made this for my family so it's not applicable to everyone. Maybe in the future there will be a more comprehensive ancestral section of this project.
